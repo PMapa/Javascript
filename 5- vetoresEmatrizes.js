@@ -23,3 +23,15 @@ alert(dolar);
 //dolar.reverse();
 //dolar.concat();
 //dolar.join();
+
+
+
+var notas = [[4.5, 6.5, 8.7], [8.5, 9.7, 9.8]];
+var colunas = notas[0].length;
+
+acum = 0;
+for (let i=0; i<colunas;  i++){
+    acum = acum + notas[1][i];
+}
+
+document.write("Media das notas de Maria: " + acum/colunas);
